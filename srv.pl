@@ -14,8 +14,8 @@ die "Error: $!" unless $s;
 print "Running...\n";
 
 while ( my $c = $s->accept ) {
-    print "There was a connection.\n";
-    $c->print("Socket connection ok!\n");
+    print "Connect.\n";
+    $c->print("Alive: ");
     $c->close;
 }
 

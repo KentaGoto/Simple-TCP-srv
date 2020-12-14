@@ -1,6 +1,10 @@
 use strict;
 use warnings;
 use IO::Socket;
+use Time::Piece;
+
+my $t = localtime;
+my $daytime = $t->strftime('%Y-%m-%d %H:%M:%S');
 
 my $s = new IO::Socket::INET(
     PeerAddr => 'localhost',
@@ -10,5 +14,5 @@ my $s = new IO::Socket::INET(
 
 die "IO::Socket : $!" unless $s;
 
-print <$s>;
+print <$s> . $daytime . "\n";
 close($s);
