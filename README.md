@@ -2,6 +2,7 @@
 
 ## Description  
 A simple TCP server.  
+A lightweight script for alive monitoring.  
 
 ## Requires
 Perl 5
