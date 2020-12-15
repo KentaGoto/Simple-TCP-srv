@@ -4,7 +4,8 @@
 A simple TCP server.  
 A lightweight script for alive monitoring.  
 
-* Change "localhost" in the source code accordingly.  
+**Note**  
+Change "localhost" in the source code accordingly.  
 
 **Tips**  
 Command to check if the port is listening. In the following example, port 3000 is checked.  
